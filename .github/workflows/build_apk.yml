@@ -28,9 +28,9 @@ jobs:
         flutter-version: '3.19.0'
 
     - name: Flet Build APK
-      # الحل الذكي: نرسل الإجابات (الاسم، الوصف، الشركة) عبر الأنبوب |
+      # التعديل هنا: أضفنا حرف y في البداية للموافقة على السؤال الأول
       run: |
-        printf 'BookSolver\nSmart Solver App\ncom.mamdoh.booksolver\n' | flet build apk --verbose
+        printf 'y\nBookSolver\nSmart Solver App\ncom.mamdoh.booksolver\n' | flet build apk --verbose
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
