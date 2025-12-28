@@ -28,9 +28,9 @@ jobs:
         flutter-version: '3.19.0'
 
     - name: Flet Build APK
-      # التعديل هنا: أضفنا الاسم والوصف لنمنع الأسئلة
+      # التعديل الجديد: أضفنا --org لإسكات السؤال الأخير
       run: |
-        flet build apk --verbose --project-name "BookSolver" --description "Smart Solver App"
+        flet build apk --verbose --project-name "BookSolver" --description "Smart Solver App" --org "com.mamdoh.booksolver"
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
